@@ -1,0 +1,120 @@
+.Header{
+    background-color: var(--blanco);
+
+    width: 100%;   
+    padding: 1em 1.5em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+/*SECCIÓN LOGO INICIO / HOY / CREAR*/
+.Header-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.Header-aLogo{
+    width: 2.8em;
+    height: 2.8em;
+    /*padding: 0.1em;*/
+    border-radius: 50%;
+
+    transition: all 0.2s ease;
+}
+.Header-aLogo:hover{
+    background-color: var(--gris-claro);
+}
+.Header-a{    
+    padding: 0.7em 0.9em;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.active{
+    background-color: var(--negro-claro);
+    color: var(--blanco);
+}
+.btnSinActive{
+    background-color: transparent;
+}
+
+
+/*SECCIÓN BUSCADOR*/
+.Header-buscar{
+    width: 80%;
+    height: 3em;
+    border-radius: 25px;
+
+    background-color: var(--gris-buscador);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Header-search{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 25px;
+
+    padding: 0.7em;
+}
+.Header-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+    color: var(--gris);
+} 
+
+/*SECCIÓN BOTONES CON ICONOS*/
+.Header-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.Header-btnIco{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+    padding: 0.5em;
+
+    transition: all 0.2s ease;
+} 
+.Header-btnIco:hover{
+    background-color: var(--gris-claro);
+}
+.Header-btnIco.active,
+.bordeBtnIco{
+    border: 1px solid var(--negro-claro);
+    background-color: var(--gris-claro);
+}
+
+
+/* Responsive */
+
+@media (max-width: 500px)
+{
+    .Header{
+        padding: 1em;
+    }
+    .Header-buscar,
+    .Header-btnHoy{ /* Oculto: buscar y hoy */
+        display: none;
+    } 
+
+
+}

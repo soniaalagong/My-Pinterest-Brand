@@ -1,0 +1,17 @@
+.Overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.Overlay.mostrar{
+    display: block;
+}
+.Overlay.ocultar{
+    display: none;
+}

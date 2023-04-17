@@ -1,0 +1,220 @@
+.Main{
+    background-color: var(--blanco);
+    
+    width: 100%;
+    min-height: 100vh;
+    padding: 0em 1.5em;
+    
+    margin-top: 6em; /* Porque el header es fixed */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start; 
+    gap: 1em;
+}
+.Main-columna{
+    width: calc(100% / 6 - 1em); /*Resto el tamaño del gap*/
+}
+.Main-pin{
+    width: 100%;    
+    margin-bottom: 1em;
+}
+
+/*IMAGEN*/
+.Main-mask{
+    width: 100%;
+    margin-bottom: 10px;
+
+    /*Necesario para que el aboslute coja a este como padre*/
+    position: relative;
+}
+.Mask-img{    
+    min-height: 5em;
+    border-radius: 20px;
+
+    transition: all 0.1s ease;
+}
+.Mask-img:hover{
+    filter:brightness(0.6);
+}
+.Mask-superior{
+    width: 100%;
+    padding: 1em;
+    background-color: transparent;
+    color: var(--blanco-roto);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5em;
+}
+.Mask-btnTablero{
+    width: 7em;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+.Mask-btnTablero img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.Mask-btnGuardar{
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+
+    border-radius: 30px;
+    background-color: var(--color-btn-regist);
+}
+.icon{
+    transition: .2s linear;
+}
+.Mask-btnGuardar:hover > .icon{
+    transform: scale(1.2);
+}
+
+.Mask-inferior{
+    width: 100%;
+    padding: 0.5em 1em;/*0 0.5em 0.3em 0;*/
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Mask-btn{
+    width: 2em;
+    height: 2em;
+
+    padding: 0.5em; /*Centrar el svg*/
+    border-radius: 50%;
+    margin-left: 0.5em;
+
+    background-color: var(--blanco-roto);
+}
+.Main-mask:hover .Mask-superior,
+.Main-mask:hover .Mask-inferior{
+    opacity: 1;
+}
+
+
+/*TEXTO*/
+.Main-texto{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+    padding: 0 0.5em; 
+}
+.Texto-user{
+    width: 2em;
+    height: 2em;
+
+    border-radius: 50%;
+    padding: 0.3em;
+
+    background-color: var(--gris-claro);
+}
+.Texto-h2{
+    width: 80%;
+}
+
+/* Responsive */
+
+@media (max-width: 1080px){
+    .Mask-btnTablero span{
+        display: none;
+    }
+    .Mask-btnTablero img{
+        padding: 0.3em;
+    } 
+    .Mask-btnGuardar{
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.8em;
+    }
+    .Mask-btn{
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+@media (max-width: 800px){
+    
+    .Main{
+        padding: 0em 1em;
+    }
+    .Main-columna{
+        width: calc(100% / 3 - 1em); 
+    }
+    .Mask-btnTablero span{
+        display: flex;
+    }
+    .Mask-btnTablero img{
+        padding: 0;
+    } 
+    .Mask-btnGuardar{
+        width: 3em;
+        height: 3em;
+        padding: 1em;
+    } 
+    .Mask-btn{
+        width: 2em;
+        height: 2em;
+    }
+}
+
+@media (max-width: 570px){
+
+    .Mask-btnTablero span{
+        display: none;
+    }
+    .Mask-btnTablero img{
+        padding: 0.3em;
+    } 
+    .Mask-btnGuardar{
+        font-size: var(--size-mini);
+    } 
+    .Mask-btnGuardar{
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.8em;
+    }
+    .Mask-btn{
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .Main{
+        padding: 0em .5em;
+    }
+    .Main-columna{
+        width: calc(100% /2 - 1em); 
+    }
+    .Texto-h2{
+        font-size: var(--size-texto);
+    }
+}

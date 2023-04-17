@@ -1,0 +1,220 @@
+.More{
+    background-color: var(--blanco);
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5em;
+
+    margin: auto;
+    margin-top: 6em; /* Porque el header es fixed */
+}
+.More-h3,
+.More-h2{
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+.More-h2{
+    margin-top: 20px;
+    font-size: var(--size-grande);
+}
+
+.Formulario{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+
+    padding: 1em;
+
+    background-color:var(--blanco);
+}
+
+.Div-actuales,
+.Div-editar,
+.Div-nuevo{
+    width: 100%;
+    min-height: 30vh;
+
+    margin: auto;
+    padding: 1em;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Div-actuales{
+    width: 50%;
+    margin: 20px auto 30px auto;
+}
+.Formulario-botones{
+    width: 50%;
+    margin: auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Formulario-btn{
+    margin-left: 10px;    
+    font-size: 18px;
+
+    padding: 0.7em 1.7em;
+
+    border-radius: 0.5em;
+    background: var(--blanco);
+    border: 1px solid var(--blanco);
+    transition: all .3s;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px var(--blanco);
+}
+.Formulario-btn:active {
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px var(--blanco);
+}
+
+.Formulario-btn.clicado{
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px var(--blanco);
+}
+.Formulario-tab{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    position:relative;
+}
+.Div-nuevo{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 1;
+}
+.Div-editar{
+    opacity: 0;
+}
+.mostrar{
+    opacity: 1;
+}
+.ocultar{
+    opacity: 0;
+}
+
+.Div-h4{
+    margin-bottom: 20px;
+    
+    font-weight: bold;
+    font-size: var(--size-subtitulo);
+}
+.Actual-btnIco{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    border: 1px solid var(--gris);
+
+    padding: 0.5em;
+
+    transition: all 0.2s ease;
+} 
+.Actual-btnIco:hover{
+    background-color: var(--gris-claro);
+}
+.Actual-lista{
+    padding: 0.5em;
+}
+.Actual-user{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: var(--size-subtitulo);
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.Actual-nombre{
+    width: 60%;
+}
+.Actual-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.Nuevo-form{
+    margin-top: 30px;   
+}
+.Nuevo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.Input-nombre{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 5vh;
+    border: 1px solid var(--gris);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width: 1280px){
+   .Actual-user{
+        font-size: var(--size-texto);
+        font-weight: bold;
+   }
+}
+
+@media (max-width: 800px){
+    .Div-actuales,
+    .Formulario-tab,
+    .Formulario-botones{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    .More-h3{
+        font-size: var(--size-texto);
+    }
+    .More-h2{
+        font-size: var(--size-subtitulos);
+    }
+    .Div-h4{
+        font-size: var(--size-texto);
+    }
+    .Formulario{
+        width: 100%;
+    }
+    .Div-actuales,
+    .Formulario-tab,
+    .Formulario-botones{
+        width: 100%;
+    }
+    .Formulario-btn{    
+        font-size: 15px;
+    }
+    .Actual-user{
+        font-size: var(--size-mini);
+   }
+   .Nuevo-div{
+    display: block;
+    }
+    .Input-nombre{
+        height: 5vh;
+    }
+}
+
+@media (max-width: 320px){
+    .Actual-user{
+        display: block;
+    }
+    .Actual-botones{
+        justify-content: flex-end;
+    }
+    
+    .Input-nombre{
+        height: 7vh;
+    }
+}

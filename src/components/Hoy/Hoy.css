@@ -1,0 +1,110 @@
+.Hoy{
+    background-color: var(--blanco);
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5em;
+    
+    margin: auto;
+    margin-top: 6em; /* Porque el header es fixed */
+}
+
+/*TÍTULO*/
+.Hoy-h1{
+    width: 80%;
+    margin: auto;
+    /*margin-top: 20px;*/
+    font-size: var(--size-superG);
+    text-align: center;
+}
+
+/*APARTADO NOVEDADES*/
+.Hoy-novedades{
+    width: 80%;
+    margin: 30px auto 70px auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center; 
+    gap: 0.6em;
+}
+.Hoy-novedad{
+    width: calc(100% / 4 - 0.6em);
+    margin: auto;
+    text-align: center;
+
+    position: relative;
+}
+.Novedad-figure img{
+    border-radius: 20px;
+    filter:brightness(0.7);
+}
+.Novedad-texto{
+    width: 10em;
+
+    border-radius: 10px;
+    color: var(--blanco-roto);
+    font-weight: bold;
+    font-size: var(--size-textoG);
+
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 5em);
+    z-index: 1;
+}
+
+
+/*MENSAJE FINAL*/
+.Novedad-fin{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.Novedad-fin img{
+    width: 1.8em;
+    height: 1.8em;
+
+    margin: auto;
+    margin-bottom: 10px;
+}
+.Novedad-h3{
+    font-size: var(--size-subtitulo);
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+@media (max-width: 1080px)
+{
+    .Novedad-texto{
+        font-size: var(--size-texto);
+    }
+}
+
+@media (max-width: 800px){
+    .Hoy-h1,
+    .Hoy-novedades,
+    .Novedad-fin{
+        width: 100%;
+    }
+    .Hoy-novedad{
+        width: calc(100% / 2 - 0.6em);
+    }
+    .Novedad-texto{
+        font-size: var(--size-textoG);
+    }
+}
+
+@media (max-width: 400px){
+    .Hoy-novedad{
+        width: calc(100% - 0.6em);
+    }
+    .Novedad-texto{
+        font-size: var(--size-subtitulo);
+    }
+    .Regist-btn{
+        width: 20em;
+        height: 2em;
+    }
+}

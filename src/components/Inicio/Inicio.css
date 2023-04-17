@@ -1,0 +1,130 @@
+.Inicio{    
+    width: 50%;
+    min-height: 100vh;
+    padding: 1em;
+
+    margin: auto;
+    text-align: center;
+
+    background-color: var(--blanco);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*TÍTULO Y SUBTÍTULO*/
+.Inicio-h2{
+    font-size: var(--size-subtitulo);
+}
+.Inicio-h1{
+    font-size: var(--size-grande);    
+    margin: 10px 0 20px 0;
+}
+
+/*FORMULARIOS*/
+.Form-inicio{
+    width: 60%;
+    min-height: 50vh;
+
+    padding: 1em;
+    margin: auto;
+
+    background-image: url(../../../assets/imagenNotif2.jpg);
+    background-position: center;
+    background-size: cover;
+
+    filter: brightness(0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    position: relative;
+}
+.Form-h2,
+.Form-label,
+.Form-name,
+.Form-relleno{
+    background-color: var(--blanco);
+}
+.Form-relleno{
+    margin-top: 10px;
+}
+.Form-label{
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+.Form-name{
+    width: 100%;
+    height: 2em;
+}
+.Form-btnEnviar{
+    width: 7em;
+    height: 2.5em;
+
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+
+    color: var(--blanco);
+    font-size: var(--size-subtitulo);
+    background-color: var(--color-btn-regist);
+}
+
+/* ERROR EN EL LOGIN*/
+
+.Error-Login{
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    background-color: var(--blanco);
+    border: 2px solid var(--negro);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Error-central{
+    margin: auto;
+}
+.Inicio-h2.espacio{
+    margin: 15px 0px;
+}
+
+.Error-btnIco{
+    width: 42px;
+    height: 42px;
+    
+    margin: auto;
+    margin-top: 10px;
+    padding: 0.5em;
+
+    border-radius: 50%;
+    border: 1px solid transparent;
+} 
+
+
+@media (max-width: 1280px){
+    .Form-inicio{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .Inicio{
+        width: 80%;
+    }
+    .Error-Login{
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px){
+    .Error-Login{
+        font-size: var(--size-subtitulo);
+    }
+}
