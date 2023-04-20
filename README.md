@@ -2,8 +2,8 @@
 
 # My Pinterest Brand
  
-Como complemento a la página web de My Brand (puedes ver el repositorio en mi perfil) creé My Pinterest Brand como proyecto final del módulo de Diseño Web FullStack por el CEI: Escuela de Diseño y Marketing Digital.
-</br>
+Una vez creada la página web de My Brand (puedes ver el repositorio en mi perfil) creé My Pinterest Brand como proyecto final del módulo de Diseño Web FullStack por el CEI: Escuela de Diseño y Marketing Digital.
+</br></br>
 Esta página web nace de la inspiración de la red social Pinterest y pretende servir como fuente de inspiración entorno a las joyas y complementos. 
 
 ## ❕ Importante
