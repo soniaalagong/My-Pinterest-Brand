@@ -3,20 +3,21 @@
 # My Pinterest Brand
  
 Como complemento a la página web de My Brand (puedes ver el repositorio en mi perfil) creé My Pinterest Brand como proyecto final del módulo de Diseño Web FullStack por el CEI: Escuela de Diseño y Marketing Digital.
+\n
 Esta página web nace de la inspiración de la red social Pinterest y pretende servir como fuente de inspiración entorno a las joyas y complementos. 
 
 ## ❕ Importante
 
 Esta página web requiere de un login previo. Existen 3 usuarios distintos con los que acceder:
 
-- <b>Usuario:</b> 		Sonia Alagón
-  Contraseña:	1234
+- <b>Usuario:</b> 		Sonia Alagón \n
+  <b>Contraseña:</b>	1234
 
-- Usuario: 		Eduardo Fierro
-  Contraseña:	admin
+- <b>Usuario:</b> 		Eduardo Fierro \n
+  <b>Contraseña:</b>	admin
 
-- Usuario: 		CEI Escuela
-  Contraseña:	master
+- <b>Usuario:</b> 		CEI Escuela \n
+  <b>Contraseña:</b>	master
 
 [![Echa un vistazo](https://img.shields.io/static/v1?label=&message=Echa%20un%20vistazo&color=5c341c&style=for-the-badge)](https://my-pinterest-brand.vercel.app/)
 
