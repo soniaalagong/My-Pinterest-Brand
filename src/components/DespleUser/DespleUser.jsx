@@ -9,7 +9,6 @@ import { BtnBrown } from '../BtnBrown/BtnBrown'
 export const DespleUser = ()=>{
 
     const usuarioActual = localStorage.getItem("usuario")
-    console.log(localStorage)
 
     const {header} = useContext(HeaderContexto)
 
