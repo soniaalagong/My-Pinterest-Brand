@@ -1,6 +1,6 @@
 import './Header.css'
 
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import { HeaderContexto } from '../../context/global'
 import { Overlay } from '../Overlay/Overlay'
@@ -38,20 +38,20 @@ export const Header = ()=>{
 const Inicio = ({logo, ini, hoy})=>{
     return(
         <>
-        <div className="Header-inicio">
-            <h1 className="Header-h1">
-                <NavLink to={logo.href} className="Header-aLogo btnSinActive">
-                    <img {...logo} className="Header-img"/>
+            <div className="Header-inicio">
+                <h1 className="Header-h1">
+                    <NavLink to={logo.href} className="Header-aLogo btnSinActive">
+                        <img {...logo} className="Header-img"/>
+                    </NavLink>
+                </h1>
+                <NavLink to={ini.href} className="Header-a">
+                    <span>{ini.nombre}</span>
                 </NavLink>
-            </h1>
-            <NavLink to={ini.href} className="Header-a">
-                <span>{ini.nombre}</span>
-            </NavLink>
-            <NavLink to={hoy.href} className="Header-a Header-btnHoy">
-                <span>{hoy.nombre}</span>
-            </NavLink>
-        </div>
-        <Overlay />
+                <NavLink to={hoy.href} className="Header-a Header-btnHoy">
+                    <span>{hoy.nombre}</span>
+                </NavLink>
+            </div>
+            <Overlay />
         </>
     )
 }

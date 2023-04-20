@@ -4,10 +4,6 @@ import '../BtnBrown/BtnBrown.css'
 import { useState, useEffect, useContext } from 'react'
 import { UsersContexto } from '../../context/global'
 
-/*import { pinterest } from '../../bbddMain'
-const  { sectionMore } = pinterest
-const {titulo, subtitulo, formulario} = sectionMore*/
-
 export const More = ()=>{
 
     const [sectionMore, setSectionMore] = useState({})

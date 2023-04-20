@@ -13,6 +13,8 @@
     background-color: var(--color-btn-regist);
 }
 
+/* Responsive */
+
 @media (max-width: 1280px)
 {
     .BtnBrown{

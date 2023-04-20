@@ -8,10 +8,11 @@
     left: 0px;
     z-index: 1000;
 }
-
+/*Clase para mostrar el display*/
 .Overlay.mostrar{
     display: block;
 }
+/*Clase para ocultar el display*/
 .Overlay.ocultar{
     display: none;
 }

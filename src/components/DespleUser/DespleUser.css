@@ -34,7 +34,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 1em; */
 }
 .Cuenta-img{
     width: 35px;
@@ -78,6 +77,8 @@
     margin: 15px 0px;
 }
 
+/* Responsive */
+
 @media (max-width: 1280px){
     .DespleUser{
         width: 25vw;
@@ -88,7 +89,6 @@
     .Cuenta-btnIco{
         width: 35px;
         height: 35px;    
-        /* padding: 0.5em; */
     }
 }
 

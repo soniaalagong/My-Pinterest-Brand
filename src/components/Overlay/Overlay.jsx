@@ -7,6 +7,7 @@ export const Overlay = ()=>{
     
     const {header, setHeader} = useContext(HeaderContexto)
 
+    /* Gestión del divOverlay para cerrar los desplegables */
     const [div, setDiv] = useState(false)
     const divHandler= ()=>{
         setHeader({notif: div, user: div})

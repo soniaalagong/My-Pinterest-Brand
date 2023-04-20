@@ -1,7 +1,6 @@
 import './Main.css'
 
 import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
 
 export const Main = ()=>{
 
@@ -45,7 +44,6 @@ const MainColumna = ({pin})=>{
     )
 }
 
-
 const Pin = ({id, mainMask, textoUsuario})=>{
     return(
         <div key={id} className="Main-pin">
@@ -55,17 +53,16 @@ const Pin = ({id, mainMask, textoUsuario})=>{
     )
 }
 
-const MainMask = ({pin, maskSuperior, maskInferior})=>{
+const MainMask = ({pin, maskSuperior})=>{
     return(
         <a className="Main-mask">
             <img {...pin} className="Mask-img" />
             <MaskSuperior {...maskSuperior}/>
-            {/* <MaskInferior {...maskInferior}/> */}
         </a>
     )
 }
 
-
+/*El botón guardar finalmente tiene imagen imagen de un corazón para simular un like*/
 const MaskSuperior = ({botonGuardar})=>{
     return(
         <div className="Mask-superior">
@@ -75,19 +72,6 @@ const MaskSuperior = ({botonGuardar})=>{
         </div>
     )
 }
-
-const MaskInferior = ({botonesInf})=>{
-    return(
-        <div className="Mask-inferior">
-            {botonesInf.map( boton =>
-                <button key={boton.id} className="Mask-btn">
-                    <img {...boton} />
-                </button>
-            )}
-        </div>
-    )
-}
-
 
 const TextoUser = ({textoUsuario})=>{
     return(

@@ -5,7 +5,7 @@
     min-height: 100vh;
     padding: 0em 1.5em;
     
-    margin-top: 6em; /* Porque el header es fixed */
+    margin-top: 6em;
 
     display: flex;
     flex-flow: row wrap;
@@ -26,7 +26,7 @@
     width: 100%;
     margin-bottom: 10px;
 
-    /*Necesario para que el aboslute coja a este como padre*/
+    /*Necesario para que el absolute coja a este como padre*/
     position: relative;
 }
 .Mask-img{    
@@ -82,23 +82,6 @@
 .Mask-btnGuardar:hover > .icon{
     transform: scale(1.2);
 }
-
-.Mask-inferior{
-    width: 100%;
-    padding: 0.5em 1em;/*0 0.5em 0.3em 0;*/
-    background-color: transparent;
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    opacity: 0;
-    transition: all 0.2s ease;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 .Mask-btn{
     width: 2em;
     height: 2em;
@@ -109,11 +92,9 @@
 
     background-color: var(--blanco-roto);
 }
-.Main-mask:hover .Mask-superior,
-.Main-mask:hover .Mask-inferior{
+.Main-mask:hover .Mask-superior{
     opacity: 1;
 }
-
 
 /*TEXTO*/
 .Main-texto{

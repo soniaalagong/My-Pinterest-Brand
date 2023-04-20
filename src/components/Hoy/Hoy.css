@@ -6,14 +6,13 @@
     padding: 1.5em;
     
     margin: auto;
-    margin-top: 6em; /* Porque el header es fixed */
+    margin-top: 6em; 
 }
 
 /*TÍTULO*/
 .Hoy-h1{
     width: 80%;
     margin: auto;
-    /*margin-top: 20px;*/
     font-size: var(--size-superG);
     text-align: center;
 }
@@ -54,13 +53,11 @@
     z-index: 1;
 }
 
-
 /*MENSAJE FINAL*/
 .Novedad-fin{
     width: 80%;
     margin: auto;
     text-align: center;
-
 }
 .Novedad-fin img{
     width: 1.8em;
@@ -75,8 +72,9 @@
     margin: 15px 0px;
 }
 
-@media (max-width: 1080px)
-{
+/* Responsive */
+
+@media (max-width: 1080px){
     .Novedad-texto{
         font-size: var(--size-texto);
     }

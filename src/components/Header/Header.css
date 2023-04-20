@@ -27,7 +27,6 @@
 .Header-aLogo{
     width: 2.8em;
     height: 2.8em;
-    /*padding: 0.1em;*/
     border-radius: 50%;
 
     transition: all 0.2s ease;
@@ -48,7 +47,6 @@
 .btnSinActive{
     background-color: transparent;
 }
-
 
 /*SECCIÓN BUSCADOR*/
 .Header-buscar{
@@ -103,11 +101,9 @@
     background-color: var(--gris-claro);
 }
 
-
 /* Responsive */
 
-@media (max-width: 500px)
-{
+@media (max-width: 500px){
     .Header{
         padding: 1em;
     }
@@ -115,6 +111,4 @@
     .Header-btnHoy{ /* Oculto: buscar y hoy */
         display: none;
     } 
-
-
 }

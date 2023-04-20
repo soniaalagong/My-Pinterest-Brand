@@ -1,5 +1,4 @@
 import './Inicio.css'
-import '../BtnBrown/BtnBrown.css'
 
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -16,7 +15,7 @@ export const Inicio = ()=>{
             signal: controller.signal
         }
 
-        const bbdd = 'http://localhost:2802/inicio' || 'http://api-pinterest.vercel.app'
+        const bbdd = 'http://localhost:2802/inicio' /*|| 'http://api-pinterest.vercel.app'*/
 
         fetch( bbdd, opciones)
         .then( res  => res.json() )

@@ -6,7 +6,7 @@
     padding: 1.5em;
 
     margin: auto;
-    margin-top: 6em; /* Porque el header es fixed */
+    margin-top: 6em;
 }
 .More-h3,
 .More-h2{
@@ -19,7 +19,6 @@
     margin-top: 20px;
     font-size: var(--size-grande);
 }
-
 .Formulario{
     width: 80%;
     margin: auto;
@@ -29,7 +28,6 @@
 
     background-color:var(--blanco);
 }
-
 .Div-actuales,
 .Div-editar,
 .Div-nuevo{
@@ -158,6 +156,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Responsive */
 
 @media (max-width: 1280px){
    .Actual-user{

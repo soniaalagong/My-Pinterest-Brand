@@ -45,6 +45,8 @@
     text-align: center;
 }
 
+/* Responsive */
+
 @media (max-width: 1280px){
     .DespleNotif{
         width: 25vw;

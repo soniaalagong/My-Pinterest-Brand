@@ -67,7 +67,6 @@
 }
 
 /* ERROR EN EL LOGIN*/
-
 .Error-Login{
     width: 80%;
     height: 80%;
@@ -94,7 +93,6 @@
 .Inicio-h2.espacio{
     margin: 15px 0px;
 }
-
 .Error-btnIco{
     width: 42px;
     height: 42px;
@@ -107,6 +105,7 @@
     border: 1px solid transparent;
 } 
 
+/* Responsive */
 
 @media (max-width: 1280px){
     .Form-inicio{
