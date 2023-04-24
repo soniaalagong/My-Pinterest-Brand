@@ -62,7 +62,9 @@ const Login = ({titulo, userName, contra, textBienvenida, textBtn, texto1, texto
             body: JSON.stringify(login)
         }
 
-        fetch('http://localhost:2802/login', options)
+        const bbdd = /*'http://localhost:2802/login'*/ 'https://api-pinterest.vercel.app/login'
+
+        fetch( bbdd, options)
         .then( res  => res.json())
         .then( data => {
             if(data.data.login){
