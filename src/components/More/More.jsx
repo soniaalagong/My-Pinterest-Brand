@@ -62,7 +62,9 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/users', opciones)
+        const bbdd = /*'http://localhost:2802/users'*/ 'https://api-pinterest.vercel.app/users'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json())
         .then( data => setActuales(data))
         .catch( err => console.log(err))
@@ -91,7 +93,9 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
             body: JSON.stringify(edit)
         }
       
-        fetch(`http://localhost:2802/users`, opciones) 
+        const bbdd = /*'http://localhost:2802/users'*/ 'https://api-pinterest.vercel.app/users'
+
+        fetch( bbdd, opciones) 
         .then( res  => res.json() )
         .then( data => setActuales(data))
         .catch( err => console.log(err))          
@@ -113,7 +117,9 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
             body: JSON.stringify(nuevo)
         }
 
-        fetch(`http://localhost:2802/users`, options)
+        const bbdd = /*'http://localhost:2802/users'*/ 'https://api-pinterest.vercel.app/users'
+
+        fetch( bbdd, options)
         .then( res  => res.json() )
         .then( data => setActuales(data))
         .catch( err => console.log(err))
@@ -129,7 +135,9 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
             signal: controller.signal
         }
       
-        fetch(`http://localhost:2802/users/${_id}`, opciones) 
+        const bbdd = /*'http://localhost:2802/users'*/ 'https://api-pinterest.vercel.app/users'
+
+        fetch( bbdd + '/${_id}', opciones) 
         .then( res  => res.json() )
         .then( data => setActuales(data))
         .catch( err => console.log(err))
