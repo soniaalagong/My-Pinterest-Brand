@@ -15,7 +15,7 @@ export const Inicio = ()=>{
             signal: controller.signal
         }
 
-        const bbdd = /*'http://localhost:2802/inicio'*/ 'http://api-pinterest.vercel.app'
+        const bbdd = /*'http://localhost:2802/inicio'*/ 'https://api-pinterest.vercel.app'
 
         fetch( bbdd, opciones)
         .then( res  => res.json() )
