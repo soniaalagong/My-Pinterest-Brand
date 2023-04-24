@@ -85,16 +85,19 @@
     top: 0;
     left: 0;
 
-    opacity: 1;
+    /*opacity: 1;*/
 }
 .Div-editar{
-    opacity: 0;
+    /*opacity: 0;*/
+    display: none;
 }
 .mostrar{
-    opacity: 1;
+    /*opacity: 1;*/
+    display: block;
 }
 .ocultar{
-    opacity: 0;
+    /*opacity: 0;*/
+    display: none;
 }
 
 .Div-h4{
