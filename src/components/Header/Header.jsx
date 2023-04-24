@@ -17,7 +17,9 @@ export const Header = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/header', opciones)
+        const bbdd = /*'http://localhost:2802/header'*/ 'https://api-pinterest.vercel.app/header'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setHeader(data.data[0]))
         .catch( err => console.log(err))

@@ -14,7 +14,9 @@ export const Main = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/columnaPines', opciones)
+        const bbdd = /*'http://localhost:2802/columnaPines'*/ 'https://api-pinterest.vercel.app/columnaPines'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setColumnas(data.data))
         .catch( err => console.log(err))

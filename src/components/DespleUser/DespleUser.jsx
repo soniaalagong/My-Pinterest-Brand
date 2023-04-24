@@ -22,7 +22,9 @@ export const DespleUser = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/menuUser', opciones)
+        const bbdd = /*'http://localhost:2802/menuUser'*/ 'https://api-pinterest.vercel.app/menuUser'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setMenuUser(data.data[0]))
         .catch( err => console.log(err))

@@ -15,7 +15,9 @@ export const Hoy = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/sectionHoy', opciones)
+        const bbdd = /*'http://localhost:2802/sectionHoy'*/ 'https://api-pinterest.vercel.app/sectionHoy'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setSectionHoy(data.data[0]))
         .catch( err => console.log(err))

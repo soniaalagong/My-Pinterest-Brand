@@ -16,7 +16,9 @@ export const More = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/sectionMore', opciones)
+        const bbdd = /*'http://localhost:2802/sectionMore'*/ 'https://api-pinterest.vercel.app/sectionMore'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setSectionMore(data.data[0]))
         .catch( err => console.log(err))

@@ -17,7 +17,9 @@ export const DespleNotif = ()=>{
             signal: controller.signal
         }
 
-        fetch('http://localhost:2802/menuNotif', opciones)
+        const bbdd = /*'http://localhost:2802/menuNotif'*/ 'https://api-pinterest.vercel.app/menuNotif'
+
+        fetch( bbdd, opciones)
         .then( res  => res.json() )
         .then( data => setMenuNotif(data.data[0]))
         .catch( err => console.log(err))
