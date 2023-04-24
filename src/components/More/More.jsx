@@ -137,7 +137,7 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
       
         const bbdd = /*'http://localhost:2802/users'*/ 'https://api-pinterest.vercel.app/users'
 
-        fetch( bbdd + '/${_id}', opciones) 
+        fetch( bbdd + '/' + `${_id}`, opciones) 
         .then( res  => res.json() )
         .then( data => setActuales(data))
         .catch( err => console.log(err))
