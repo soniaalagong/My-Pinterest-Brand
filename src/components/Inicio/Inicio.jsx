@@ -70,7 +70,6 @@ const Login = ({titulo, userName, contra, textBienvenida, textBtn, texto1, texto
             if(data.data.login){
                 localStorage.setItem("usuario", data.data.usuario)
                 navegar('/all/main') 
-                console.log(localStorage)
             } else{
                 setError(true)
             }

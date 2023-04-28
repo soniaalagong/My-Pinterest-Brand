@@ -151,7 +151,6 @@ const Formulario = ({ userEditar, userActuales, userNuevos, botones })=>{
     })
     const btnNuevoHandler = (valor1, valor2)=>{
         setBtnNuevo({btnNuevo: valor1, btnEdit: valor2})
-        console.log({btnNuevo: valor1, btnEdit: valor2})
     }
 
     return(
